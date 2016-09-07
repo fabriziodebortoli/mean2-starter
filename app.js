@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 var appRoutes = require('./routes/app');
 
 var app = express();
-mongoose.connect('localhost:27017/node-angular');
+mongoose.connect('localhost:27017/mean2-starter');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

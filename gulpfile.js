@@ -32,8 +32,8 @@ gulp.task('vendor', function() {
     gulp.src('node_modules/@angular/**')
         .pipe(gulp.dest(vendor + '/@angular'));
 
-    gulp.src('node_modules/es6-shim/**')
-        .pipe(gulp.dest(vendor + '/es6-shim'));
+    gulp.src('node_modules/core-js/**')
+        .pipe(gulp.dest(vendor + '/core-js'));
 
     //reflect metadata
     gulp.src('node_modules/reflect-metadata/**')
