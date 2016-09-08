@@ -10,6 +10,8 @@ var appRoutes = require('./routes/app');
 
 var app = express();
 // mongoose.connect('localhost:27017/mean2-starter');
+// mongoose.connect('mongodb://heroku_6hrq8gfk:q9afaan59fo4hf3r8o03cm1skc@ds019916.mlab.com:19916/heroku_6hrq8gfk');
+mongoose.connect(process.env.MONGODB_URI);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
