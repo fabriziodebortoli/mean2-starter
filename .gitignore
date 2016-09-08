@@ -3,3 +3,5 @@ node_modules/
 /public/js/vendor/
 /public/js/app/
 .env
+npm-debug.log
+npm-debug.log.*
