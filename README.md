@@ -1,5 +1,5 @@
 # MEAN (MongoDB, EspressJS, Angular2, NodeJS) Stack Starter pack
-A starter application for a MEAN Stack application. 
+A starter application for a MEAN Stack application with Material Design components
 
 ## Installation
 1. Download the repository
@@ -7,6 +7,3 @@ A starter application for a MEAN Stack application.
 3. Execute `npm run gulp build`
 4. Start up the server: `npm start`
 5. Open http://localhost:3000
-
-## Future Additions
-- Material Design components for Angular 2 with Angular Material (https://material.angular.io/)

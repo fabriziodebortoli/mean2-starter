@@ -1,3 +1,9 @@
+## 1.0.3 (2016-09-08)
+
+**Updated:
+
+  - Added Material Design components for Angular 2 with Angular Material (https://material.angular.io/)
+
 ## 1.0.2 (2016-09-07)
 
 **Updated:

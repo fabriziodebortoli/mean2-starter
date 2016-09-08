@@ -9,7 +9,9 @@ var appDev = 'assets/app/';
 var appProd = 'public/js/app/';
 var vendor = 'public/js/vendor';
 
-var tsconfig = gulpTypescript.createProject('tsconfig.json');
+var tsconfig = gulpTypescript.createProject('tsconfig.json', {
+    typescript: require('typescript')
+});
 
 gulp.task('build-ts', function() {
     return gulp.src(appDev + '/**/*.ts')
@@ -32,6 +34,9 @@ gulp.task('vendor', function() {
     gulp.src('node_modules/@angular/**')
         .pipe(gulp.dest(vendor + '/@angular'));
 
+    gulp.src('node_modules/@angular2-material/**')
+        .pipe(gulp.dest(vendor + '/@angular2-material'));
+
     gulp.src('node_modules/core-js/**')
         .pipe(gulp.dest(vendor + '/core-js'));
 
@@ -49,10 +54,6 @@ gulp.task('vendor', function() {
     //systemjs
     gulp.src('node_modules/systemjs/**')
         .pipe(gulp.dest(vendor + '/systemjs/'));
-
-    //ng2-bootstrap
-    gulp.src('node_modules/ng2-bootstrap/**')
-        .pipe(gulp.dest(vendor + '/ng2-bootstrap/'));
 
     //moment
     gulp.src('node_modules/moment/**')
